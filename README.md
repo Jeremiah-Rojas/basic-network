@@ -2,7 +2,7 @@
 <img width="1089" height="596" alt="image" src="https://github.com/user-attachments/assets/86937932-3a65-4d50-b5ac-0b65b7d2c402" />
 </br>
 
-## The configurations for the "Network-Automation-1" machine are as follows:
+## "Network-Automation-1" Configurations:
 ```
 cat /etc/network/interfaces
 ```
@@ -10,7 +10,7 @@ Then uncomment "auto eth0" and "iface eth0 inet dhcp". _This allows internet acc
 </br><img width="544" height="298" alt="image" src="https://github.com/user-attachments/assets/2df61cfc-6b9a-4c40-b27a-cbd187af3608" />
 </br>
 
-## The configurations for the "Cisco-Switch" are as follows:
+## "Cisco-Switch" Configurations:
 </br>_This commands can either entered in manually or copied and pasted all together._
 ```
 enable
@@ -50,7 +50,7 @@ wr
 ```
 </br>
 
-## The configurations for the "Cisco-Router" are as follows:
+## "Cisco-Router" Configurations:
 ```
 conf t
 host ROUTER
