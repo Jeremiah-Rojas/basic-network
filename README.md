@@ -93,3 +93,5 @@ crypto key generate rsa
 end
 wr
 ```
+# Python Script
+</br>This script automates the creations or vlans on the switch and something on the router.
