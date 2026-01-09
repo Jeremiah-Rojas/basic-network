@@ -1,7 +1,7 @@
 # Basic Network Topolgy Configurations
-## Yikes
 <img width="1089" height="596" alt="image" src="https://github.com/user-attachments/assets/86937932-3a65-4d50-b5ac-0b65b7d2c402" />
 </br>
+
 ## The configurations for the "Network-Automation-1" machine are as follows:
 ```
 cat /etc/network/interfaces
@@ -9,6 +9,7 @@ cat /etc/network/interfaces
 Then uncomment "auto eth0" and "iface eth0 inet dhcp". _This allows internet access for the machine and to obtain an IP address from a DHCP server._
 </br><img width="544" height="298" alt="image" src="https://github.com/user-attachments/assets/2df61cfc-6b9a-4c40-b27a-cbd187af3608" />
 </br>
+
 ## The configurations for the "Cisco-Switch" are as follows:
 </br>_This commands can either entered in manually or copied and pasted all together._
 ```
@@ -48,6 +49,7 @@ end
 wr
 ```
 </br>
+
 ## The configurations for the "Cisco-Router" are as follows:
 ```
 conf t
