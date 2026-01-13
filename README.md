@@ -1,5 +1,5 @@
 # Basic Network Topolgy Configurations
-<img width="1089" height="596" alt="image" src="https://github.com/user-attachments/assets/86937932-3a65-4d50-b5ac-0b65b7d2c402" />
+<img width="769" height="459" alt="image" src="https://github.com/user-attachments/assets/86937932-3a65-4d50-b5ac-0b65b7d2c402" />
 </br>
 
 ## "Network-Automation-1" Configurations:
