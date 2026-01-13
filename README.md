@@ -3,8 +3,10 @@
 </br>
 
 ## "Network-Automation-1" Configurations:
+
+</br>Run this command to access the network configuration file:
 ```
-cat /etc/network/interfaces
+nano /etc/network/interfaces
 ```
 Then uncomment "auto eth0" and "iface eth0 inet dhcp". _This allows internet access for the machine and to obtain an IP address from a DHCP server._
 </br><img width="544" height="298" alt="image" src="https://github.com/user-attachments/assets/2df61cfc-6b9a-4c40-b27a-cbd187af3608" />
