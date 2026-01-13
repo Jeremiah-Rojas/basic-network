@@ -14,7 +14,8 @@ Then uncomment "auto eth0" and "iface eth0 inet dhcp". _This allows internet acc
 <u>The following commands are subject to change<u>
 
 ## "Cisco-Switch" Configurations:
-</br>_This commands can either entered in manually or copied and pasted all together._
+</br> These commands set up the switch to be able to handle automated configuration changes by the "Network-Automation1" machine. The second set of commands enables all modes of remote access to the switch and then saves the configurations with "wr"; if you do not save your configurations, then will erase everytime you turn off GNS3.
+</br>_These commands can either entered in manually or copied and pasted all together._
 ```
 enable
 conf t
@@ -54,6 +55,8 @@ wr
 </br>
 
 ## "Cisco-Router" Configurations:
+
+</br>These commands assign an ip address to the cisco router and allow it to communicate with other devices. The second set of commands configure the router for all modes of remote access.
 ```
 conf t
 host ROUTER
@@ -97,7 +100,7 @@ end
 wr
 ```
 # Python Script
-</br>This script automates the creations or vlans on the switch and something on the router.
+</br>This script automates the creations or vlans on the switch and disables all remote access on the router except for SSH:
 ```
 from netmiko import ConnectHandler
 
