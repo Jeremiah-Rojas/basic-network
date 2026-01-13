@@ -119,22 +119,23 @@ iosv = {
 }
 
 net_connect = ConnectHandler(**iosv_l2)
-#output = net_connect.send_command('show ip int brief')
-#print (output)
 
+#This configures a loopback address
 config_commands = ['int loop 0', 'ip address 1.1.1.1 255.255.255.0']
 output = net_connect.send_config_set(config_commands)
 print (output)
 
+# This code creates a set number of VLANs
 for n in range (2,4):
     print ("Creating VLAN " + str(n))
     config_commands = ['vlan ' + str(n), 'name Python_VLAN ' + str(n)]
     output = net_connect.send_config_set(config_commands)
     print (output) 
 
-# Router commands
+# These commands are for the router and allow only SSH as the remote access method
 net_connect = ConnectHandler(**iosv)
 config_commands = ['line vty 0 4', 'login local', 'transport input ssh']
 output = net_connect.send_config_set(config_commands)
 print (output)
 ```
+### Configurations in Action
