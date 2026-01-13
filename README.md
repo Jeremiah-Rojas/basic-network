@@ -14,7 +14,7 @@ Then uncomment "auto eth0" and "iface eth0 inet dhcp". _This allows internet acc
 <u>The following commands are subject to change<u>
 
 ## "Cisco-Switch" Configurations:
-</br> These commands set up the switch to be able to handle automated configuration changes by the "Network-Automation1" machine. The second set of commands enables all modes of remote access to the switch and then saves the configurations with "wr"; if you do not save your configurations, then will erase everytime you turn off GNS3.
+</br> These commands set up the switch to be able to handle automated configuration changes by the "Network-Automation-1" machine. The second set of commands enables all modes of remote access to the switch and then saves the configurations with "wr"; if you do not save your configurations, then will erase everytime you turn off GNS3.
 </br>_These commands can either entered in manually or copied and pasted all together._
 ```
 enable
@@ -139,3 +139,8 @@ output = net_connect.send_config_set(config_commands)
 print (output)
 ```
 ### Configurations in Action
+This is the script being run on the "Network-Automation-1" machine:
+</br><img width="659" height="393" alt="image" src="https://github.com/user-attachments/assets/733a6517-3550-4d6d-969e-4890ecf60f3f" />
+
+</br>This is the result of the configurations shown on the cisco switch:
+</br><img width="769" height="459" alt="image" src="https://github.com/user-attachments/assets/72a28176-71bb-4b94-811c-f1a3fe689fad" />
