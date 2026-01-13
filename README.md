@@ -144,3 +144,6 @@ This is the script being run on the "Network-Automation-1" machine:
 
 </br>This is the result of the configurations shown on the cisco switch:
 </br><img width="769" height="459" alt="image" src="https://github.com/user-attachments/assets/72a28176-71bb-4b94-811c-f1a3fe689fad" />
+<br>As for the router configurations, you can see that the common remote access methods like Telnet and FTP are disabled and only SSH is functional:
+<img width="1345" height="697" alt="image" src="https://github.com/user-attachments/assets/87707efc-ea75-4862-9bd7-4808a2d42a94" />
+
