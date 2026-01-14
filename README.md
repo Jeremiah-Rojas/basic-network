@@ -15,19 +15,19 @@ Then uncomment "auto eth0" and "iface eth0 inet dhcp". _This allows internet acc
 
 ## "Cisco-Switch" Configurations:
 </br> These commands set up the switch to be able to handle automated configuration changes by the "Network-Automation-1" machine. The second set of commands enables all modes of remote access to the switch and then saves the configurations with "wr"; if you do not save your configurations, then will erase everytime you turn off GNS3.
-</br>_These commands can either entered in manually or copied and pasted all together._
+</br>_These commands can either entered in manually or copied and pasted all together. The values with "*" on each side are subject to change as desired and you should not run these commands with the "#" still present._
 ```
 enable
 conf t
-host SWITCH
-int vlan1
-ip address 192.168.122.75 255.255.255.0 
+host #SWITCH#
+int #vlan1#
+ip address #192.168.122.75# 255.255.255.0 
 no shut
 end
 
 conf t
-username msfadmin password msfadmin
-enable password msfadmin
+username #msfadmin# password #msfadmin#
+enable password #msfadmin#
 line vty 0 4
 login local
 transport input all
@@ -38,14 +38,14 @@ These commands configure the switch for ssh:
 ```
 enable
 conf t
-username msfadmin pass msfadmin
-username msfadmin priv 15
+username #msfadmin# pass #msfadmin#
+username #msfadmin# priv 15
 
 line vty 0 4
 login local
 transport input all
 
-ip domain-name example.com
+ip domain-name #example.com#
 crypto key generate rsa
 1024
 
@@ -57,16 +57,17 @@ wr
 ## "Cisco-Router" Configurations:
 
 </br>These commands assign an ip address to the cisco router and allow it to communicate with other devices. The second set of commands configure the router for all modes of remote access.
+</br>_These commands can either entered in manually or copied and pasted all together. The values with "*" on each side are subject to change as desired and you should not run these commands with the "#" still present._
 ```
 conf t
-host ROUTER
-int g0/0
-ip address 192.168.122.80  255.255.255.0
+host #ROUTER#
+int #g0/0#
+ip address #192.168.122.80#  255.255.255.0
 no shut
 end
 
 conf t
-username msfadmin password msfadmin
+username #msfadmin# password #msfadmin#
 line vty 0 4
 login local
 transport input all
@@ -85,14 +86,14 @@ wr
 These commands configure the router for ssh:
 ```
 conf t
-username msfadmin pass msfadmin
-username msfadmin priv 15
+username #msfadmin# pass #msfadmin#
+username #msfadmin# priv 15
 
 line vty 0 4
 login local
 transport input all
 
-ip domain-name example.com
+ip domain-name #example.com#
 crypto key generate rsa
 1024
 
