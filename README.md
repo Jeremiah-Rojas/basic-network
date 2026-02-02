@@ -1,6 +1,6 @@
 # Basic Network Topolgy Configurations
 <img width="769" height="459" alt="image" src="https://github.com/user-attachments/assets/86937932-3a65-4d50-b5ac-0b65b7d2c402" />
-</br>
+</br>The following lab shows how a python script can automate the simple tasks such as creating VLANs on the Cisco switch and disabling all remote access methods excpet for SSH on the Cisco router.
 
 ### Devices Used:
 - Cisco IOSv 15.7 router
