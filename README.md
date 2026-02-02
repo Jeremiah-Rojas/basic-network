@@ -2,6 +2,13 @@
 <img width="769" height="459" alt="image" src="https://github.com/user-attachments/assets/86937932-3a65-4d50-b5ac-0b65b7d2c402" />
 </br>
 
+### Devices Used:
+- Cisco IOSv 15.7 router
+- Cisco IOSvL2 15.2.1 switch
+- GNS3 Software
+- Ubuntu Container (running on VMware machine)
+
+
 ## "Network-Automation-1" Configurations:
 
 </br>Run this command to access the network configuration file:
